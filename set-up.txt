@@ -1,0 +1,50 @@
+# AwishBites set up after create project
+
+# Install React Navigation
+npm install @react-navigation/native
+
+# Install dependencies for React Navigation Stack
+npm install react-native-screens react-native-safe-area-context
+
+# Install Stack Navigator
+npm install @react-navigation/native-stack
+
+# Install Drawer Navigator
+npm install @react-navigation/drawer
+
+# Install Async Storage
+npm install @react-native-async-storage/async-storage
+
+# Install react-native-check-box
+npm install react-native-check-box
+
+# Install axios
+npm install axios
+
+# Install react-native-snap-carousel
+npm install react-native-snap-carousel
+
+# ViewPropType Problem Solution (Problem => ViewPropTypes will be removed from React Native, along with all other PropTypes)
+step 1: npm install prop-types
+step 2: find ./ -type f -name '*.js' -exec sed -i '' -e 's/import PropTypes from "react-native-prop-types";/import PropTypes from "prop-types";/g' {} +
+step 3: npm uninstall react-native-prop-types
+OR,
+npm install deprecated-react-native-prop-types
+Path : AwishBites\node_modules\react-native-check-box/index.js
+removed : ViewPropTypes import
+Add : import { ViewPropTypes as RNViewPropTypes, } from 'deprecated-react-native-prop-types';
+check which need according to error
+
+# set up all version properly
+npx expo install --fix
+
+# Error solve command
+npm audit
+npm audit fix
+npm audit fix --force
+npm fund
+
+#There are 3 orientation values
+"orientation": "portrait ",
+"orientation": "landscape",
+"orientation": "default",

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "icon": "local-dining",
+        "food": "Fast food"
+    },
+    {
+        "id": "2",
+        "icon": "local-cafe",
+        "food": "Drink"
+    },
+    {
+        "id": "3",
+        "icon": "fastfood",
+        "food": "snacks"
+    },
+    {
+        "id": "4",
+        "icon": "local-bar",
+        "food": "Alcohol"
+    },
+    {
+        "id": "5",
+        "icon": "eco",
+        "food": "Fruit"
+    }
+]

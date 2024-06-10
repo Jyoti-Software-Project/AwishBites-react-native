@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "AwishBites",
+    "slug": "AwishBites",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/Images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/Images/favicon.png"
+    }
+  }
+}
