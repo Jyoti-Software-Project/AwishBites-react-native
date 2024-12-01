@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -68,7 +69,7 @@ const JyotiBites = () => {
                     <Stack.Screen name={"Welcome"} component={Welcome} options={{ headerShown: false }} />
                     <Stack.Screen name="Login" component={Login} options={{ headerShown: true }} initialParams={{ title: 'Login' }} />
                     <Stack.Screen name="Register" component={Register} options={{ headerShown: true }} initialParams={{ title: 'Register' }} />
-                    {/* {!auth ? ( */}
+                    {!auth ? ( 
                         <>
                             <Stack.Screen name="Home" component={Home} options={{ header: ({ route, navigation }) => (
                                 <Header title="" backButton={false} navigation={navigation} />
@@ -86,11 +87,15 @@ const JyotiBites = () => {
                                 <Header title="Profile" backButton={true} navigation={navigation} />
                             )}} />
                         </>
-                    {/* ) : ( <></> )} */}
+                    ) : ( <></> )} 
                 </Stack.Navigator>
             </NavigationContainer>
         </DarkModeProvider>
     );
-}
+};
+
+JyotiBites.propTypes = {
+    navigation: PropTypes.object.isRequired,
+};
 
 export default JyotiBites;
