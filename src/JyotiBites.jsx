@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -94,8 +94,8 @@ const JyotiBites = () => {
     );
 };
 
-JyotiBites.propTypes = {
-    navigation: PropTypes.object.isRequired,
-};
+// JyotiBites.propTypes = {
+//     navigation: PropTypes.object.isRequired,
+// };
 
 export default JyotiBites;
