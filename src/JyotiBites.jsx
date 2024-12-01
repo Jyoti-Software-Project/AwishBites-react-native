@@ -17,7 +17,7 @@ import Profile from "./Components/Profile";
 const Stack = createNativeStackNavigator();
 const safeAreaInsetsValue = Platform.OS === 'android' ? 0 : 0;
 
-const AwishBites = () => {
+const JyotiBites = () => {
     const [auth, setAuth] = useState(false);
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const AwishBites = () => {
 
     const screenOptions = {
         header: ({ route, navigation }) => (
-            <Header title={route.params?.title || 'Awish-Bites'} backButton={navigation.canGoBack()} navigation={navigation} />
+            <Header title={route.params?.title || 'Jyoti-Bites'} backButton={navigation.canGoBack()} navigation={navigation} />
         ),
         headerShown: true,
         headerStyle: {
@@ -93,4 +93,4 @@ const AwishBites = () => {
     );
 }
 
-export default AwishBites;
+export default JyotiBites;

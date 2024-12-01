@@ -29,8 +29,8 @@ const Welcome = ({ navigation }) => {
     return (
         <View style={[styles.container, {backgroundColor: darkMode ? "#183153" : "#ffffff"}]}>
             <View style={[styles.imageContainer]}>
-                <ImageBackground style={[styles.image]} source={require("../../assets/Images/awish_bites.webp")} resizeMode="cover">
-                    <Text style={styles.imageText}>Awish&nbsp;Bites</Text>
+                <ImageBackground style={[styles.image]} source={require("../../assets/Images/jyoti_bites.webp")} resizeMode="cover">
+                    <Text style={styles.imageText}>Jyoti&nbsp;Bites</Text>
                 </ImageBackground>
             </View>
             <View style={[styles.textContainer]}>

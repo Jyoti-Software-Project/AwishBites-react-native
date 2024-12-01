@@ -1,4 +1,4 @@
-# AwishBites set up after create project
+# JyotiBites set up after create project
 
 # Install React Navigation
 npm install @react-navigation/native
@@ -30,7 +30,7 @@ step 2: find ./ -type f -name '*.js' -exec sed -i '' -e 's/import PropTypes from
 step 3: npm uninstall react-native-prop-types
 OR,
 npm install deprecated-react-native-prop-types
-Path : AwishBites\node_modules\react-native-check-box/index.js
+Path : JyotiBites\node_modules\react-native-check-box/index.js
 removed : ViewPropTypes import
 Add : import { ViewPropTypes as RNViewPropTypes, } from 'deprecated-react-native-prop-types';
 check which need according to error
