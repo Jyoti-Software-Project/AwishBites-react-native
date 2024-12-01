@@ -68,7 +68,7 @@ const JyotiBites = () => {
                     <Stack.Screen name={"Welcome"} component={Welcome} options={{ headerShown: false }} />
                     <Stack.Screen name="Login" component={Login} options={{ headerShown: true }} initialParams={{ title: 'Login' }} />
                     <Stack.Screen name="Register" component={Register} options={{ headerShown: true }} initialParams={{ title: 'Register' }} />
-                    {/* {!auth ? (  */}
+                    {auth ? (
                         <>
                             <Stack.Screen name="Home" component={Home} options={{ header: ({ route, navigation }) => (
                                 <Header title="" backButton={false} navigation={navigation} />
@@ -86,7 +86,7 @@ const JyotiBites = () => {
                                 <Header title="Profile" backButton={true} navigation={navigation} />
                             )}} />
                         </>
-                    {/* ) : ( <></> )}  */}
+                    ) : ( <></> )}
                 </Stack.Navigator>
             </NavigationContainer>
         </DarkModeProvider>
