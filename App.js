@@ -1,14 +1,14 @@
 import React from "react";
 import { SafeAreaView, StatusBar, StyleSheet, View, Text } from 'react-native';
-// import JyotiBites from './src/JyotiBites';
+import JyotiBites from './src/JyotiBites';
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar animated={true} backgroundColor="#007AFF" />
             <View style={styles.appContainer}>
-                {/* <JyotiBites /> */}
-                <Text>Demo</Text>
+                {/* <Text>Demo</Text> */}
+                <JyotiBites />
             </View>
         </SafeAreaView>
     );

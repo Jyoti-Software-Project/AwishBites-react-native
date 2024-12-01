@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FlatList, Image, ImageBackground, ScrollView, Text, TextInput, TouchableOpacity, View, VirtualizedList } from "react-native";
-import Carousel from 'react-native-snap-carousel';
+// import Carousel from 'react-native-snap-carousel';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import styles from "../../assets/Props/HomeProps";
@@ -53,13 +53,13 @@ const Home = ({ navigation }) => {
             <View style={styles.homeContainer}>
                 <ScrollView>
                     <View style={styles.carouselContainer}>
-                        <Carousel ref={carouselRef} loop={true} data={carouselImage} sliderWidth={393} itemWidth={393} renderItem={({ item }) => (
+                        {/* <Carousel ref={carouselRef} loop={true} data={carouselImage} sliderWidth={393} itemWidth={393} renderItem={({ item }) => (
                             <ImageBackground style={{width: "100%", height: 220, alignItems: "center", justifyContent: "center"}} source={item.image} resizeMode="cover">
                                 <Text style={[styles.title, {fontWeight: "100", color: "#183153"}]}>
                                     Find your{'\n'}<Text style={[styles.title, {fontWeight: "bold", color: "#183153"}]}>Best Food&nbsp;</Text>here
                                 </Text>
                             </ImageBackground>
-                        )} />
+                        )} /> */}
                     </View>
                     <View style={styles.searchContainer}>
                         <View style={styles.searchBox}>
